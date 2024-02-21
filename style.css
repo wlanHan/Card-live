@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-container {
+    width: 25%;
+    border: 1px solid gray;
+    font-family: sans-serif;
+}
+
+.card-container img {
+    opacity: 0.8;
+    cursor: pointer;
+    padding: 5px;
+    transition: .7s;
+
+}
+
+.card-container img:hover {
+    opacity: 1;
+}
+
+.card-bottom-container {
+    padding: 20px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-footer {
+    margin-top: 8px;
+    padding: 10px;
+
+    p {
+        line-height: 20px;
+        letter-spacing: 1px;
+        padding: 2px;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.underline {
+    border-bottom: 1px solid gray;
+}
+
+.post-link {
+    padding: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    margin-top: 10px;
+
+    background-color: rgb(96, 94, 94);
+
+    a {
+        text-decoration: none;
+        margin: 8px;
+        display: inline-block;
+        color: white;
+        position: relative;
+    }
+
+}
+
+.tittle-post {
+    p {
+        margin-top: 7px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.post-link a::after {
+    content: "";
+    position: absolute;
+    background-color: #D3E0CA;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+
+}
+
+.post-link a:hover::after {
+    width: 100%;
+
+}
+
+
+.card-social {
+    margin-top: .2rem;
+    text-align: center;
+    padding: 5px;
+
+    i {
+        cursor: pointer;
+        padding: 20px;
+        transition: .6s;
+
+    }
+
+    i:hover {
+        background-color: gray;
+        color: white !important;
+    }
+}
